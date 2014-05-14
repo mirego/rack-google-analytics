@@ -36,7 +36,7 @@
   ga('require', 'displayfeatures');
 <% end %>
 
-<% if @options[:tracker] %>
+<% if @options[:tracker] && @options[:track_pageview] %>
    ga('send', 'pageview');
 <% end %>
 
